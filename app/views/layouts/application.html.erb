@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>FirstApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <head>
+      <title>FirstApp - TRubilarP</title>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    </head>
 
-  <body>
-    <%= yield %>
-  </body>
+    <body>
+    <!-- Navbar Start--> 
+      <nav class="navbar-inverse">
+              <ul>
+                <li><%= link_to 'One', pages_one_path %></li>
+                <li><%= link_to 'Two', pages_two_path %></li>
+                <li><%= link_to 'Three', pages_three_path %></li>
+              </ul>
+            </nav>
+    <!-- Navbar Ends --> 
+    
+    <!-- Main -->
+      <div id="main"> 
+        <div class="inner">
+          <%= yield %>
+        </div>
+      </div>  
+    <!-- Main Ends --> 
+
+    </body>
+  <%= javascript_include_tag 'application'%>
 </html>
