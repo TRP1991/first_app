@@ -2,9 +2,7 @@
 
 Heroku links 
 
-https://dashboard.heroku.com/apps/whispering-savannah-49794
-
-https://dashboard.heroku.com/apps/cryptic-island-66911
+https://cryptic-island-66911.herokuapp.com/pages/one
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
